@@ -1,0 +1,109 @@
+:root{
+    --default:#fff;
+    --wrong:#BD4291;
+    --right:#53BF9D;
+}
+
+p,body,html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    --color: var(--default);
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    background: var(--color)
+}
+body.right{
+    --color: var(--right)
+}
+
+body.wrong{
+    --color: var(--wrong)
+}
+
+.container{
+    height: 70vh;
+    width: 70vw;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    background: #fff;
+}
+.flex{
+    display: flex;
+}
+.center-align{
+    align-items: center;
+}
+.center-justify{
+    justify-content: center;
+}
+.center{
+    align-items: center;
+    justify-content: center;
+}
+.evenly-justify{
+    justify-content: space-evenly;
+}
+.column{
+    flex-direction: column;
+}
+.one{
+    flex: 1;
+}
+.two{
+    flex:2;
+}
+.three{
+    flex:3;
+}
+.border{
+    border: 0.1px solid silver;
+}
+.padding-10{
+    padding: 2vh;
+}
+.answer{
+    all:unset;
+    --color:var(--default);
+    border:0.1px solid silver;
+    min-height: 5vh;
+    min-width:3vw;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--color);
+}
+.answer.right{
+    --color:var(--right)
+}
+.answer.wrong{
+    --color:var(--wrong)
+}
+.btn{ 
+    all:unset;
+    border: 1px solid silver;
+    height: 5vh;
+    width: 5vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.16);
+    border: 0;
+}
+.answer:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.16);
+     border: 0;
+}
+.shadow{
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.16);
+}

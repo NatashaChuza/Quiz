@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
     <title>Quiz App</title>
 </head>
-<body>
-    <div class="container">
-        <div class="hide" id="question-container">
-            <div id="question"></div>
-            <div id="answers">
-                <button class="answer">1</button>
-                <button class="answer">2</button>
-                <button class="answer">3</button>
+<body >
+    <div class="container flex column shadow">
+        <div class="hide flex three column" id="question-container">
+            <div id="question" class="flex two center-align padding-10">Question</div>
+            <div id="answers" class="flex three center-align evenly-justify">
+                <button class="answer ">1</button>
+                <button class="answer ">2</button>
+                <button class="answer ">3</button>
                 <button class="answer">4</button>
             </div>
         </div>
-        <div class="controls">
+        <div class="controls flex one center-align evenly-justify">
             <button class="btn" id="start-btn">start</button>
             <button class="btn hide" id="next-btn">next</button>
         </div>
-    </div>
-    
+    </div>    
 </body>
 </html>
