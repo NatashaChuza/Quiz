@@ -1,6 +1,6 @@
 :root{
     --default:#fff;
-    --wrong:#BD4291;
+    --wrong:#990000;
     --right:#53BF9D;
 }
 
@@ -21,6 +21,9 @@ body.right{
 
 body.wrong{
     --color: var(--wrong)
+}
+body.default{
+    --color:var(--default)
 }
 
 .container{
@@ -106,4 +109,11 @@ body.wrong{
 }
 .shadow{
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.16);
+}
+.hide{
+    display:none;
+}
+.q-txt{
+    font-size: 19px;
+    font-weight: 600;
 }
